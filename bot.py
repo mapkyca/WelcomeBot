@@ -103,9 +103,7 @@ def welcome_nick(newcomer, ircsock, channel, channel_greeters):
     ircsock.send("PRIVMSG {0} :Welcome {1}!  The channel is pretty quiet "
                  "right now, so I thought I'd say hello, and ping some people "
                  "(like {2}) that you're here.  If no one responds for a "
-                 "while, try emailing us at hello@openhatch.org or just try "
-                 "coming back later.  FYI, you're now on my list of known "
-                 "nicknames, so I won't bother you again."
+                 "while, try posting on our development mailing list at https://groups.google.com/forum/#!forum/known-dev or just try coming back later."
                  "\n".format(channel, newcomer, greeter_string(channel_greeters)))
 
 # Checks and manages the status of newcomers.
